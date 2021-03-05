@@ -30,9 +30,15 @@ public class Program {
 		
 		System.out.println("FindAll: ");
 		List<Seller> All = sellerdao.findaAll();
-		for(Seller obj: All) {
+		for(Seller obj: All	) {
 			System.out.println(obj);
 		}
+		
+		System.out.println("Insert: ");
+		Seller newSeller = new Seller(0 , "Greg", "Greg@gmail.com", new Date(), 4000.0, dep);
+		sellerdao.insert(newSeller);
+		System.out.println("Insert ID: " + newSeller.getId());
+
 
 	}
 
