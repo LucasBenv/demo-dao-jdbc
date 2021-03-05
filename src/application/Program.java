@@ -18,7 +18,7 @@ public class Program {
 		
 		Seller seller = sellerdao.findById(3);
 		
-		System.out.println("FindById: ");
+		System.out.println("FindById : ");
 		System.out.println(seller);
 		
 		System.out.println("FindByDepartment: ");
