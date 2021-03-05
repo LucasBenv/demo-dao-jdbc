@@ -44,7 +44,9 @@ public class Program {
 		seller.setName("Lucas");
 		seller.setEmail("Lucas@gmail.com");
 		sellerdao.update(seller);
-		System.out.println("Update: ");
+		
+		System.out.println("Delete: ");
+		sellerdao.deleteById(11);
 
 
 	}
