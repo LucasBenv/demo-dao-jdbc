@@ -38,6 +38,15 @@ public class Program {
 		Seller newSeller = new Seller(0 , "Greg", "Greg@gmail.com", new Date(), 4000.0, dep);
 		sellerdao.insert(newSeller);
 		System.out.println("Insert ID: " + newSeller.getId());
+		
+		System.out.println("Update: ");
+		seller = sellerdao.findById(10);
+		seller.setName("Lucas");
+		seller.setEmail("Lucas@gmail.com");
+		sellerdao.update(seller);
+		
+		System.out.println("Delete: ");
+		sellerdao.deleteById(11);
 
 
 	}
