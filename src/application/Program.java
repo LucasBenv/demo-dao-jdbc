@@ -27,6 +27,12 @@ public class Program {
 		for(Seller obj: list) {
 			System.out.println(obj);
 		}
+		
+		System.out.println("FindAll: ");
+		List<Seller> All = sellerdao.findaAll();
+		for(Seller obj: All) {
+			System.out.println(obj);
+		}
 
 	}
 
